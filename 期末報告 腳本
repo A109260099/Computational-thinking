@@ -1,0 +1,91 @@
+name = 'DLYARR'
+print("哈囉,大家好。我是", name, ",是一個聊天機器人。")
+hobby = "我很喜歡上運算思維課程。"
+print(hobby)
+for i in range(6):
+  names = input("嗨!妳好,請問大名?: ")
+  print("我叫DLYARR")
+  print("你好", names, "很高興認識你") 
+  print("Hello DLYARR!")
+
+feeling = input("你今天心情如何?: ")
+print("告訴我你現在", feeling, "的原因。 ")
+reason = input("為什麼: ")
+print("我知道了!謝謝分享。")
+
+print('我很擅長用Python畫表格。')
+question = "不然我來幫你們把你們的成績做成表格如何?"
+print(question)
+answer = input('My answer is yes or no : ')
+if answer == 'yes':
+   import matplotlib.pyplot as plt
+   values = [70,54,87,72,65,90]
+   x_labels = ['D','L','Y','A','R1','R2']
+   plt.bar(x_labels,values)
+   print('厲害吧!')
+plt.show()
+print('厲害吧')
+if answer == 'no':
+  print('你真的很難取悅!')
+
+hobby = input("輸入一個興趣:")
+print("我的興趣是",hobby,"那你的呢？")
+print("我的興趣是研究程式設計")
+print("那我想知道你今年幾歲?")
+age = int(input('Enter a age: '))
+age = age + 5
+print("你再過五年就", age, "歲了!")
+year = int(input("五年後是西元幾年: "))
+print("想不到你在", year, "年就", age, "歲了!")
+
+print("我喜歡西瓜,也喜歡嘗試各種新食物。")
+food = input("你呢。你最喜歡的食物是什麼?: ")
+print("我喜歡", food)
+question = "你多久吃一次" + food + "?: "
+howoften = input(question)
+print("真特別!感覺這樣對健康很好。")
+animal = input("我最喜歡的動物是長頸鹿。你呢?: ")
+print('我也喜歡', animal, '!')
+print('而且我養的', animal, '很喜歡吃', food, '。')
+
+print('我們來玩遊戲吧!')
+n = 0 
+left = 0 
+while n < 2: 
+    secret_number = int(input('Enter a number: '))
+    i = input("猜1和100之間的秘密數: ")
+    i = int(i) 
+    while (i != secret_number):
+        if i >= secret_number:
+          print("你猜的太高,猜低一點~")
+        else:
+          print("你猜的太低,猜高一點~")
+        i = int(input("再猜一次: "))
+    print("你猜對了!")
+    n = n + 1 
+    left = 2 - n
+    print("這是第", n, "次的一起來玩遊戲", "還有", left, "次邀約。")
+
+print('遊戲玩夠了，那你在功課上有什麼問題嗎?')
+ques = name + '那你會算這題的赫氏指數嗎?我功課不會寫...。'
+print(ques)
+print('當然!我幫你~')
+print('謝啦~那我給你廠商的市占百分比~')
+print('沒問題，交給我!')
+hhi = 0
+firm_1 = float(input())
+firm_2 = float(input())
+firm_3 = float(input())
+firm_4 = float(input())
+firms = [firm_1, firm_2, firm_3, firm_4]
+print('有四家廠商，他們的市占百分比分別為',firms)
+for j in firms:
+  hhi = hhi + j**2
+print('經過我的運算，這題的赫氏指數為', hhi, '。')
+print('你還想再聊嗎?')
+ans = input('Enter your answer like yes or no : ')
+if ans == 'yes':
+  print('不過我有點累了，不然下次再聊吧!')
+else:
+  print('那我們下次再聊吧!')
+print('今天跟你們聊天很開心，祝你們運算思維報告得高分!')
